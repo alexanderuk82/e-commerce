@@ -29,6 +29,441 @@
     <meta property="profile:first_name" content="Alexander" />
     <meta property="profile:last_name" content="Burgos " />
     <meta property="profile:username" content="alexanderuk82" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blogkio" />
+    <meta property="og:url" content="https://e-commerce-etsy.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://og-image.xyz/og/BLOGKIO/E-commerce shop/github.com{{s}}alexanderuk82{{s}}e-commerce.git/https/atkinson/unmatchedeclipse/black/data.png"
+    />
+    <meta
+      property="og:description"
+      content="e-commerce shop using API restful"
+    />
+
+    <!-- /
+    * ======= STYLES FOR SWIPER ===
+    / -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- /
+    * ======= STYLES MAIN ===
+    / -->
+
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- 
+    / ============================/
+    *  SECTION HEADER
+    /=============================/ -->
+
+    <header class="header">
+      <!-- ======== SECTION TOPBAR ========= -->
+      <div class="header__topBar">
+        <div class="header__topBar__container">
+          <img
+            src="images/Logo.svg"
+            alt="main logo for this website"
+            class="header__topBar__container--logo"
+          />
+
+          <button class="header__topBar__container--menuIcon"></button>
+        </div>
+      </div>
+
+      <!-- ======== SECTION SLIDER ========= -->
+      <section class="header__slider">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="images/flat-lay-black-friday-sale-written-light-box.jpg"
+                alt="black-fridat-promotion"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/paper-style-black-friday-elements.jpg"
+                alt="black-friday-promotion"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/beautiful-woman-smiling-holding-black-final-sale-banner-colorful-shopping-bags.jpg"
+                alt="girl smiling promotion"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination nav-slider"></div>
+      </section>
+
+      <!-- ======== SECTION HERO ======== -->
+
+      <section class="header__hero">
+        <div class="header__hero__container">
+          <!-- Categorie --1 -->
+          <figure class="header__hero__categories">
+            <img src="images/toys.jpg" alt="categories-toys" />
+            <figcaption id="arrivals">
+              <p>#new arrivals</p>
+
+              <div class="header__hero__categories--name">
+                <h4 class="h4">DY toys for toddlers</h4>
+
+                <button class="btn-shop-now">shop now <span> </span></button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <!-- Categorie --2 -->
+          <figure class="header__hero__categories">
+            <img src="images/jewerly.jpg" alt="categories-toys" />
+            <figcaption id="featured">
+              <p>#featured</p>
+
+              <div class="header__hero__categories--name">
+                <h4 class="h4">Luxury DY Yewerly</h4>
+
+                <button class="btn-shop-now">shop now <span> </span></button>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- Categorie --3 -->
+          <figure class="header__hero__categories">
+            <img src="images/wedding.jpg" alt="categories-toys" />
+            <figcaption id="popular">
+              <p>#popular</p>
+
+              <div class="header__hero__categories--name">
+                <h4 class="h4">wedding preparation</h4>
+
+                <button class="btn-shop-now">shop now <span> </span></button>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- Categorie --4 -->
+          <figure class="header__hero__categories">
+            <img src="images/card.jpg" alt="categories-toys" />
+            <figcaption id="hot">
+              <p>#hot collection</p>
+
+              <div class="header__hero__categories--name">
+                <h4 class="h4">Customized cards</h4>
+
+                <button class="btn-shop-now">shop now <span> </span></button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </header>
+
+    <!-- / ============================/
+    *  SECTION FEATURED PRODUCTS 
+    /=============================/ -->
+
+    <section class="featured">
+      <div class="featured__container">
+        <!-- /=====TITLE-->
+
+        <div class="featured__container__title">
+          <h2 class="h2">featured products</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            delectus.
+          </p>
+        </div>
+
+        <!-- /GRID LAYOUT FEATURED PRODUCTS-->
+
+        <div class="featured__container__grid">
+          <!-- <figure class="featured__container__grid__item">
+            <a href="link" class="featured__conatiner__grid__link">
+              <img
+              src="https://source.unsplash.com/random/800x800/?img=1"
+              alt="product items"
+              />
+            </a>
+            <span class="discount"> -20% </span>
+            
+            <figcaption>
+              <h5 class="h5 featured-product">small plate set</h5>
+              <small>
+                <span class="lowPrice">£29.00</span>
+                <span class="offerPrice">£18.00</span>
+              </small>
+            </figcaption>
+          </figure> -->
+        </div>
+      </div>
+    </section>
+
+    <!--/============================/
+      *  Top rated, Best Selling On sale *
+        /=============================/ -->
+
+    <main class="main">
+      <div class="main__container">
+        <!-- ========= TOP RATED ====== -->
+        <div class="main__container__top-rated">
+          <h4 class="main__container__title">Top Rated</h4>
+
+          <!-- // ==== SHOWING PRODUCTS =====// -->
+        </div>
+
+        <!-- ========= BEST SELLING ====== -->
+        <div class="main__container__best-selling">
+          <h4 class="main__container__title">Best Selling</h4>
+
+          <!-- // ==== SHOWING PRODUCTS =====// -->
+        </div>
+
+        <!-- ========= ON SALE ====== -->
+        <div class="main__container__on-sale">
+          <h4 class="main__container__title">on sale</h4>
+
+          <!-- // ==== SHOWING PRODUCTS =====// -->
+        </div>
+      </div>
+    </main>
+    <!--/============================/
+      * OUR QUALITY INFORMATION
+        /=============================/ -->
+
+    <section class="information">
+      <div class="information__container">
+        <!-- ====BOX FREE DELIVERY==== -->
+
+        <div class="information__box">
+          <img src="images/store.svg" alt="free-delivery" />
+          <div class="information__box--text">
+            <p>free delivery</p>
+            <small> For all order over £99 </small>
+          </div>
+        </div>
+
+        <!-- ====BOX 30DAYS==== -->
+
+        <div class="information__box">
+          <img src="images/return.svg" alt="30 days return" />
+          <div class="information__box--text">
+            <p>30 days return</p>
+            <small> If goods have problems </small>
+          </div>
+        </div>
+        <!-- ====BOX PAYMENT==== -->
+
+        <div class="information__box">
+          <img src="images/payment.svg" alt="secure-payment" />
+          <div class="information__box--text">
+            <p>decure payment</p>
+            <small>100% secure payment</small>
+          </div>
+        </div>
+        <!-- ====BOX 24/7 support==== -->
+
+        <div class="information__box">
+          <img src="images/support.svg" alt="support" />
+          <div class="information__box--text">
+            <p>24/7 support tech</p>
+            <small>Dedicated support</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================/ * FOOTER SECTION
+    /=============================/ -->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- /===FIRST COLUMN -->
+
+        <div class="footer__container__column logo-column">
+          <img src="images/Logo.svg" alt="logo-company" />
+          <div class="footer__container__column__info">
+            <ul class="footer__container__column__list">
+              <li class="footer__container__column__item">
+                <a
+                  href="https://www.google.co.uk/maps/place/Oxford+St,+London/@51.5152576,-0.1442282,17z/data=!3m1!4b1!4m5!3m4!1s0x48761ad554c335c1:0xda2164b934c67c1a!8m2!3d51.5152543!4d-0.1420395"
+                  class="footer__container__column__link"
+                >
+                  Addres: Oxford street
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a
+                  href="tel:+44201154152"
+                  class="footer__container__column__link"
+                >
+                  Phone:(+44) 201 15 1551
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a
+                  href="mailto:support@blogkio.co.uk"
+                  class="footer__container__column__link"
+                >
+                  Email: support@blogkio.co.uk
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a
+                  href="www.etsy.co.uk"
+                  class="footer__container__column__link"
+                >
+                  Web: www.blogkio.co.uk
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- /===SECOND COLUMN -->
+
+        <div class="footer__container__column">
+          <h5 class="h5">company</h5>
+
+          <div class="footer__container__column__info">
+            <ul class="footer__container__column__list">
+              <li class="footer__container__column__item">
+                <a href="#about" class="footer__container__column__link">
+                  About Us
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a href="#" class="footer__container__column__link">
+                  Offices
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a href="#" class="footer__container__column__link">
+                  Contact
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a
+                  href="www.etsy.co.uk"
+                  class="footer__container__column__link"
+                >
+                  Help &amp; FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /===THIRD COLUMN -->
+
+        <div class="footer__container__column">
+          <h5 class="h5">useful links</h5>
+
+          <div class="footer__container__column__info">
+            <ul class="footer__container__column__list">
+              <li class="footer__container__column__item">
+                <a href="#about" class="footer__container__column__link">
+                  Privacy Protection
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a href="#" class="footer__container__column__link">
+                  Safe Payments
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a href="#" class="footer__container__column__link">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="footer__container__column__item">
+                <a
+                  href="www.etsy.co.uk"
+                  class="footer__container__column__link"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- /===FOURTH COLUMN -->
+
+        <div class="footer__container__column logo-column">
+          <h5 class="h5">newsletter</h5>
+          <p>Stay Updated on all that's new add noteworthy</p>
+
+          <form action="#" class="footer__container__column__newsletter">
+            <div class="footer__container__column__newsletter--form">
+              <input
+                class="input"
+                type="email"
+                placeholder="Write your email"
+              />
+              <button class="btn-submit" type="submit">
+                <img src="images/send-email.svg" alt="submit" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- ======= SECTION SUB-FOOTER -->
+      <section class="footer__sub">
+        <div class="footer__sub--divider"></div>
+
+        <div class="footer__sub__payments">
+          <img
+            src="images/mastercard.svg"
+            alt="payment-visa"
+            class="footer__sub--images"
+          />
+          <img
+            src="images/visa.svg"
+            alt="payment-visa"
+            class="footer__sub--images"
+          />
+          <img
+            src="images/American.svg"
+            alt="payment-visa"
+            class="footer__sub--images"
+          />
+          <img
+            src="images/discover.svg"
+            alt="payment-visa"
+            class="footer__sub--images"
+          />
+          <img
+            src="images/bank.svg"
+            alt="payment-visa"
+            class="footer__sub--images"
+          />
+        </div>
+
+        <small class="footer__sub--copyright">
+          Copyright &copy; 2021
+          <a href="https://alexanderburgos.co.uk">Alexander</a>. All rights
+          reserved
+        </small>
+      </section>
+    </footer>
+    <!-- ======= INITIALIZING SECTION SWIPER SLIDER
+    -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- 
+      
+      <!-- 
+        ======= INITIALIZING MAY MAIN JS
+      -->
+
+    <script src="main.js"></script>
+  </body>
 </html>

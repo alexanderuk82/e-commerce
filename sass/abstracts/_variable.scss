@@ -1,0 +1,53 @@
+:root {
+  //===DEFINE FONTS FOR PROJECTS
+
+  --str-main: 'Poppins', sans-serif;
+  //=== DEFINE COLOURS
+
+  --main-color-light: hsl(17, 100%, 78%);
+  --main-color-dark: hsl(17, 99%, 73%);
+
+  --strong: rgb(172, 66, 25);
+
+  --light-brown: rgb(116, 87, 76);
+  --dark-brown: rgb(61, 60, 60);
+
+  --main-black: rgba(51, 51, 51);
+
+  --offer-price: hsl(0, 100%, 69%);
+  --new-poduct: hsl(115, 38%, 56%);
+
+  --gray-color: hsl(0, 0%, 65%);
+  --box-information: hsl(0, 0%, 96%);
+
+  --light-gray: hsl(0, 0%, 90%);
+}
+
+//DEFINE VARIABLES FOR FONT STYLES
+
+$fontWeight: (
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+);
+
+$fontSize: (
+  'very-small': 0.8rem,
+  'discount': 1.2rem,
+  'small': 1.4rem,
+  'general': 1.6rem,
+  'price': 1.8rem,
+  'h4': 2.5rem,
+  'h2': 3.3rem,
+  'h5': 1.6rem,
+  'infoText': 2rem,
+);
+
+$colorLabel: (
+  'arrival': hsla(17, 99%, 73%, 0.411),
+  'featured': rgba(120, 216, 254, 0.411),
+  'popular': rgba(254, 120, 147, 0.411),
+  'hot': rgba(120, 254, 183, 0.412),
+);

@@ -1,0 +1,28 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixing' as *;
+
+.btn-shop-now {
+  background-color: transparent;
+  border: 0;
+  letter-spacing: 0.05em;
+  @include fontStyle(small, regular);
+  text-transform: uppercase;
+  padding: 1.2rem;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    background-image: url('../images/arrow-right.svg');
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    padding-left: 2rem;
+    top: 1.5rem;
+    right: -1.2rem;
+  }
+}

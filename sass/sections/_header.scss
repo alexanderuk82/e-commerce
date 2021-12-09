@@ -1,0 +1,119 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixing' as *;
+.header {
+  //Topbar section style
+  &__topBar {
+    &__container {
+      padding: 1.6rem 3rem;
+      box-shadow: (0px 5px 10px rgba(0, 0, 0, 0.02));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--logo {
+        display: flex;
+      }
+
+      &--menuIcon {
+        background-image: url('/images/menu-icon.svg');
+        background-size: cover;
+        width: 3rem;
+        height: 2rem;
+        border: 0;
+        background-color: transparent;
+
+        &:hover {
+          cursor: pointer;
+        }
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+  //Slider section style
+  &__slider {
+    margin-top: 3rem;
+    padding-left: 3rem;
+    position: relative;
+  }
+
+  // Hero section styles
+
+  &__hero {
+    margin-top: 3rem;
+    &__container {
+      padding: 3rem;
+      display: grid;
+      row-gap: 3rem;
+      justify-items: center;
+    }
+
+    &__categories {
+      width: 32.4rem;
+      height: 24rem;
+      position: relative;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.16);
+
+      &:hover figcaption {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include positionLabel();
+        .header__hero__categories--name {
+          display: block;
+        }
+      }
+
+      img {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &--name {
+        display: none;
+      }
+
+      figcaption {
+        position: absolute;
+        padding: 1.2rem;
+        top: 18rem;
+        right: 0;
+        margin-right: 2rem;
+        transition: all 0.3s;
+
+        p {
+          text-transform: uppercase;
+          letter-spacing: 0.1rem;
+          @include fontStyle(small, regular);
+        }
+
+        button {
+          transform: translateX(-1.3rem);
+        }
+        &#arrivals {
+          @include labelName(arrival);
+        }
+        &#featured {
+          @include labelName(featured);
+        }
+        &#popular {
+          @include labelName(popular);
+        }
+        &#hot {
+          @include labelName(hot);
+        }
+      }
+
+      &--name {
+        .h4 {
+          @include fontStyle(h4, medium);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@use '../abstracts/variable' as *;
+//
+// =======FONT MANAGEMENT
+//
+
+@mixin fontStyle($name, $Weight) {
+  font-size: map-get($fontSize, $name);
+  font-weight: map-get($fontWeight, $Weight);
+}
+
+//
+// =======LABEL CATEGORIES HERO SECTION
+//
+
+@mixin positionLabel {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: end;
+}
+
+@mixin labelName($labels) {
+  @include positionLabel;
+  @if $labels == 'arrival' {
+    background-color: map-get($colorLabel, $labels);
+  } @else if $labels == 'featured' {
+    background-color: map-get($colorLabel, $labels);
+  } @else if $labels == 'popular' {
+    background-color: map-get($colorLabel, $labels);
+  } @else {
+    background-color: map-get($colorLabel, $labels);
+  }
+}
+
+//
+// =======BAGDES FOR PRODUCTS
+//
+@mixin styleBadge {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 10rem;
+  padding: 1rem;
+  color: #fff;
+  padding: 0.6rem;
+  display: inline-flex;
+  @include fontStyle(discount, medium);
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 1.1rem;
+  left: 1.1rem;
+}
+@mixin badgeProduct($name) {
+  @include styleBadge;
+
+  @if ($name == discount) {
+    background-color: var(--offer-price);
+  } @else {
+    background-color: var(--new-poduct);
+  }
+}

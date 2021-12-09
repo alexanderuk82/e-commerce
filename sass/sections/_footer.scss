@@ -1,0 +1,113 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixing' as *;
+.footer {
+  margin-top: 6rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 3rem;
+    row-gap: 3rem;
+    &__column {
+      display: grid;
+      row-gap: 1.8rem;
+      p {
+        @include fontStyle(small, regular);
+      }
+      h5 {
+        @include fontStyle(infoText, semibold);
+        text-transform: capitalize;
+      }
+      &__info {
+      }
+      &.logo-column {
+        grid-column: 1/3;
+      }
+
+      &__list {
+        display: grid;
+        row-gap: 1rem;
+        list-style: none;
+        @include fontStyle(small, regular);
+      }
+
+      &__item {
+      }
+
+      &__link {
+        text-decoration: none;
+        color: var(--main-black);
+      }
+
+      &__newsletter {
+        &--form {
+          border: 1px solid var(--light-gray);
+          border-radius: 10rem;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 2rem;
+          .input {
+            border: none;
+            font-family: inherit;
+            width: 80%;
+
+            &:focus {
+              outline: 0;
+            }
+            &::placeholder {
+              opacity: 0.5;
+            }
+          }
+
+          .btn-submit {
+            border: none;
+            background-color: var(--main-color-dark);
+            border-radius: 10rem;
+            padding: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  &__sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0;
+    & > * {
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-top: 3rem;
+      }
+    }
+    padding: 0 3rem;
+    &--divider {
+      width: 100%;
+      height: 0.1rem;
+      background-color: var(--light-gray);
+
+      position: absolute;
+      top: 45%;
+      width: 86%;
+      margin: 0 auto;
+    }
+
+    &__payments {
+      & > * {
+        &:not(:last-child) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &--copyright {
+      a:link {
+        color: var(--main-color-dark);
+        text-decoration: none;
+      }
+    }
+  }
+}

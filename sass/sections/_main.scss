@@ -1,0 +1,88 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixing' as *;
+
+.main {
+  margin-top: 8rem;
+
+  &__container {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    justify-items: start;
+    row-gap: 6rem;
+    column-gap: 3rem;
+
+    &__title {
+      @include fontStyle(h4, regular);
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      width: 100%;
+      max-height: 11.6rem;
+      margin-top: 2rem;
+      &--link {
+        width: 11.6rem;
+        height: 11.6rem;
+      }
+
+      &__details {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 3rem;
+        text-align: left;
+        display: grid;
+        align-items: start;
+        margin-top: 0;
+        &--link {
+          text-decoration: none;
+          color: var(--ma-black);
+        }
+
+        &--title {
+          @include fontStyle(h5, medium);
+          width: 15rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        &--price {
+          @include fontStyle(price, regular);
+        }
+
+        &--icons {
+          display: flex;
+          & > * {
+            width: 3rem;
+            height: 3rem;
+
+            background-color: var(--main-color-light);
+            border-radius: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:last-child) {
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        &--icon {
+          img {
+            width: 2rem;
+            height: 2rem;
+            padding: 0.4rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__on-sale {
+      display: none;
+    }
+  }
+}
