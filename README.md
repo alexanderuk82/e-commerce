@@ -1,8 +1,8 @@
-<h1>Responsive Web Site For Social Agency Marketing</h1><br/>
+<h1>Responsive E-commerce website using Etsy restful API</h1><br/>
 <h2>What's include in this landing page:</h2>
 <ul>
-<li>Responsive Website agency  Using HTML, CSS and JavaScript.</li>
-<li>Adding animations when scrolling.</li>
+<li>Responsive e-commerce product homepage Using HTML, CSS and JavaScript.</li>
+<li>Loading data from external API (from etsy-shop).</li>
 <li>Was designed and developed with the methodology "Mobile First", then for desktop.</li>
 <li>Compatible with all mobile devices and with a beautiful and pleasant user interface.</li>
 <li>adobe XD UI file included </li>
