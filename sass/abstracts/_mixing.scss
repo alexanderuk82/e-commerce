@@ -59,3 +59,30 @@
     background-color: var(--new-poduct);
   }
 }
+
+//
+// =======BAGDES FOR NOTIFI OF PRODUCT
+//     FOR LIKE AND CART OPTION MENU BOTTOM
+
+@mixin noti($notiName) {
+  content: '1';
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: var(--main-color-dark);
+  position: absolute;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+
+  @if $notiName == 'like' {
+    top: 4px;
+    right: -12px;
+  } @else {
+    content: '2';
+    top: 0;
+    left: -2.4rem;
+  }
+}

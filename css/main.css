@@ -12,6 +12,7 @@
   --gray-color: hsl(0, 0%, 65%);
   --box-information: hsl(0, 0%, 96%);
   --light-gray: hsl(0, 0%, 90%);
+  --menu-bottom: hsla(0, 0%, 55%, 0.8);
 }
 
 * {
@@ -357,7 +358,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: 2rem 0;
+  margin: 2rem 0 7rem 0;
   padding: 0 3rem;
 }
 .footer__sub > * {
@@ -381,6 +382,87 @@ body {
 .footer__sub--copyright a:link {
   color: var(--main-color-dark);
   text-decoration: none;
+}
+
+.naviBottom {
+  background-color: var(--menu-bottom);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  --webkit-backdrop-filter: blur(2px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.naviBottom__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  place-items: center;
+  width: 100%;
+}
+.naviBottom__item#heart {
+  position: relative;
+}
+.naviBottom__item#heart::after {
+  content: "1";
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: var(--main-color-dark);
+  position: absolute;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+  top: 4px;
+  right: -12px;
+}
+.naviBottom__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  gap: 0.5rem;
+}
+.naviBottom__link img {
+  width: 2rem;
+  height: 2rem;
+}
+.naviBottom__link#cart {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.naviBottom__link#cart small {
+  margin-left: 1.5rem;
+  position: relative;
+}
+.naviBottom__link#cart small::before {
+  content: "1";
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: var(--main-color-dark);
+  position: absolute;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+  content: "2";
+  top: 0;
+  left: -2.4rem;
 }
 
 .swiper {
