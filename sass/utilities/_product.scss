@@ -39,6 +39,7 @@ figure {
     }
     small {
       font-size: 1.4rem;
+      color: inherit;
       & > * {
         &:not(:last-child) {
           margin-right: 1rem;

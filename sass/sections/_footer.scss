@@ -152,7 +152,8 @@
     }
 
     &--copyright {
-      a:link {
+      a:link,
+      a:visited {
         color: var(--main-color-dark);
         text-decoration: none;
       }
