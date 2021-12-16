@@ -15,3 +15,4 @@
 
 <h2>🎥 Wacth live website 👇👇</h2>
 <p>>>Link: https://e-commerce-etsy.netlify.app/</p>
+<p><img src="images/cover.jpg" widt="100%"></p>
