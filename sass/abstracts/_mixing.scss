@@ -86,3 +86,25 @@
     left: -2.4rem;
   }
 }
+
+//
+// =======  BREAKPOINT RESPONSIVE =======
+//
+
+@mixin breakpoint($responsive) {
+  @if $responsive == 'tablet' {
+    @media (min-width: 43.75em) {
+      @content;
+    }
+  }
+  @if $responsive == 'desktop' {
+    @media (min-width: 62.5em) {
+      @content;
+    }
+  }
+  @if $responsive == 'xl' {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+}

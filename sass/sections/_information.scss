@@ -3,6 +3,9 @@
 
 .information {
   margin: 4rem 0;
+  @include breakpoint(xl) {
+    margin: 9rem 0;
+  }
 
   &__container {
     display: grid;
@@ -10,6 +13,9 @@
     row-gap: 2rem;
     column-gap: 2rem;
     padding: 2rem;
+    @include breakpoint(xl) {
+      background-color: var(--box-information);
+    }
   }
 
   &__box {
@@ -23,6 +29,12 @@
     justify-content: center;
     gap: 2rem;
 
+    @include breakpoint(xl) {
+      background-color: transparent;
+      border-radius: 0;
+      box-shadow: unset;
+      padding: 2rem 0;
+    }
     &--text {
       img {
       }

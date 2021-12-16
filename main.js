@@ -94,29 +94,29 @@ function showProduct(items) {
       <a href="${url}" class="featured__conatiner__grid__link">
       <img
       src="https://picsum.photos/200/300.jpg"
-    alt="product items"
-    />
-    </a>
-    <span class="discount"> -20% </span>
-    
-    <div class="countdown">
-    <div class="time">
-    <h5 class="h5 day">00</h5>
+      alt="product items"
+      />
+      </a>
+      <span class="discount"> -20% </span>
+      
+      <div class="countdown">
+      <div class="time">
+      <h5 class="h5 day">00</h5>
     <small class="title">Days</small>
     </div>
-                <div class="time">
-                <h5 class="h5 hour">00</h5>
-                <small class="title">Hours</small>
-                </div>
-                <div class="time">
-                <h5 class="h5 min">00</h5>
-                <small class="title">Mins</small>
-                </div>
-                <div class="time">
-                  <h5 class="h5 sec">00</h5>
-                  <small class="title">Secs</small>
-                  </div>
-                  </div>
+    <div class="time">
+    <h5 class="h5 hour">00</h5>
+    <small class="title">Hours</small>
+    </div>
+    <div class="time">
+    <h5 class="h5 min">00</h5>
+    <small class="title">Mins</small>
+    </div>
+    <div class="time">
+    <h5 class="h5 sec">00</h5>
+    <small class="title">Secs</small>
+    </div>
+    </div>
                   <figcaption>
                   <h5 class="h5 featured-product">${title}</h5>
                   <small>
@@ -124,10 +124,10 @@ function showProduct(items) {
                   <span class="offerPrice">£${Math.floor(
                     price - 100 / 20
                   )}</span>
-                  </small>
-                  </figcaption>
-                  
-                  `;
+                    </small>
+                    </figcaption>
+                    
+                    `;
     } else {
       container.style.display = 'none';
     }
@@ -167,32 +167,32 @@ function showProductTop(item) {
     if (items.state === 'active' && i <= 3) {
       i++;
       containTop.innerHTML = `
-      <a class="main__container__item--link" href="${url}">
-                <img
-                  src="https://source.unsplash.com/random/800x800/"
-                  alt="Top rated"
-                />
-              </a>
-              <figcaption
-                class="main__container__item main__container__item__details"
-              >
-                <a class="main__container__item__details--link" href="${url}" target="_blank">
-                  <h5 class="main__container__item__details--title">
-                    ${title}
-                  </h5>
+                      <a class="main__container__item--link" href="${url}">
+                      <img
+                      src="https://source.unsplash.com/random/800x800/"
+                      alt="Top rated"
+                      />
+                      </a>
+                      <figcaption
+                      class="main__container__item main__container__item__details"
+                      >
+                      <a class="main__container__item__details--link" href="${url}" target="_blank">
+                      <h5 class="main__container__item__details--title">
+                      ${title}
+                      </h5>
                 </a>
                 <p class="main__container__item__details--price">£${price}</p>
                 <div class="main__container__item__details--icons">
-                  <div class="main__container__item__details--icon">
-                    <img src="images/seacr-icon.svg" alt="search btn" />
-                  </div>
-                  <div class="main__container__item__details--icon">
-                    <img src="images/cart.svg" alt="search btn" />
-                  </div>
+                <div class="main__container__item__details--icon">
+                <img src="images/seacr-icon.svg" alt="search btn" />
                 </div>
-              </figcaption>
-      
-      `;
+                <div class="main__container__item__details--icon">
+                <img src="images/cart.svg" alt="search btn" />
+                </div>
+                </div>
+                </figcaption>
+                
+                `;
     } else {
       containTop.style.display = 'none';
     }
@@ -234,29 +234,29 @@ function showProductBest(item) {
 
       containBest.innerHTML = `
         <a class="main__container__item--link" href="${url}">
-                  <img
-                    src="https://source.unsplash.com/random/780x400"
-                    alt="Top rated"
-                  />
-                </a>
-                <figcaption
-                  class="main__container__item main__container__item__details"
-                >
-                  <a class="main__container__item__details--link" href="${url}" target="_blank">
-                    <h5 class="main__container__item__details--title">
-                      ${title}
-                    </h5>
-                  </a>
-                  <p class="main__container__item__details--price">£${price}</p>
-                  <div class="main__container__item__details--icons">
-                    <div class="main__container__item__details--icon">
-                      <img src="images/seacr-icon.svg" alt="search btn" />
-                    </div>
-                    <div class="main__container__item__details--icon">
-                      <img src="images/cart.svg" alt="search btn" />
-                    </div>
-                  </div>
-                </figcaption>
+        <img
+        src="https://source.unsplash.com/random/780x400"
+        alt="Top rated"
+        />
+        </a>
+        <figcaption
+        class="main__container__item main__container__item__details"
+        >
+        <a class="main__container__item__details--link" href="${url}" target="_blank">
+        <h5 class="main__container__item__details--title">
+        ${title}
+        </h5>
+        </a>
+        <p class="main__container__item__details--price">£${price}</p>
+        <div class="main__container__item__details--icons">
+        <div class="main__container__item__details--icon">
+        <img src="images/seacr-icon.svg" alt="search btn" />
+        </div>
+        <div class="main__container__item__details--icon">
+        <img src="images/cart.svg" alt="search btn" />
+        </div>
+        </div>
+        </figcaption>
         
         `;
     } else {
@@ -268,3 +268,72 @@ function showProductBest(item) {
 }
 
 bestSelling();
+
+// ===========================================//
+//  ***  Consuming Best selling Active products***
+// ========================================= //
+
+const onSales = document.querySelector('.main__container__on-sale');
+
+const onSale = async function () {
+  const res = await fetch(
+    'https://community-etsy.p.rapidapi.com/listings/active?api_key=wt7x9o3e5nphr506evd80l9e',
+    {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-host': 'community-etsy.p.rapidapi.com',
+        'x-rapidapi-key': 'fa8acf2c65mshb42938ea644383bp1216f8jsn5311ae779480',
+      },
+    }
+  );
+
+  const data = await res.json();
+  const result = data.results;
+  showProductOnSale(result);
+};
+
+function showProductOnSale(item) {
+  let i = 1;
+  item.forEach(items => {
+    const { title, price, url } = items;
+    const containOnSale = document.createElement('figure');
+    containOnSale.classList.add('main__container__item');
+    if (items.state === 'active' && i <= 4) {
+      i++;
+
+      containOnSale.innerHTML = `
+        <a class="main__container__item--link" href="${url}">
+        <img
+        src="https://source.unsplash.com/random/900x400"
+        alt="Top rated"
+        />
+        </a>
+        <figcaption
+        class="main__container__item main__container__item__details"
+        >
+        <a class="main__container__item__details--link" href="${url}" target="_blank">
+        <h5 class="main__container__item__details--title">
+        ${title}
+        </h5>
+        </a>
+        <p class="main__container__item__details--price">£${price}</p>
+        <div class="main__container__item__details--icons">
+        <div class="main__container__item__details--icon">
+        <img src="images/seacr-icon.svg" alt="search btn" />
+        </div>
+        <div class="main__container__item__details--icon">
+        <img src="images/cart.svg" alt="search btn" />
+        </div>
+        </div>
+        </figcaption>
+        
+        `;
+    } else {
+      containBest.style.display = 'none';
+      return;
+    }
+    onSales.appendChild(containOnSale);
+  });
+}
+
+onSale();

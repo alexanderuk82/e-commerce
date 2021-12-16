@@ -4,6 +4,15 @@
 figure {
   width: 15.4rem;
   height: 17.4rem;
+
+  @include breakpoint('desktop') {
+    width: 20rem;
+    height: 25rem;
+  }
+  @include breakpoint('xl') {
+    width: 23rem;
+    height: 32rem;
+  }
   position: relative;
   img {
     width: 100%;
@@ -22,11 +31,6 @@ figure {
     .h5 {
       @include fontStyle(h5, medium);
       text-transform: capitalize;
-      //   display: -webkit-box;
-      //   -webkit-box-orient: vertical;
-      //   -webkit-line-clamp: 5;
-      //   overflow-y: hidden;
-      //   height: 5rem;
 
       width: auto;
       white-space: nowrap;

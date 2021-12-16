@@ -6,6 +6,31 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    @include breakpoint(tablet) {
+      column-gap: 2rem;
+    }
+
+    & > div:nth-child(2) {
+      @include breakpoint(desktop) {
+        margin-left: 2rem;
+      }
+    }
+    & > div:nth-child(3) {
+      @include breakpoint(tablet) {
+        grid-column: 1/2;
+      }
+      @include breakpoint(desktop) {
+        grid-column: 3;
+      }
+    }
+    & > div:nth-child(4) {
+      @include breakpoint(tablet) {
+        grid-column: 2;
+      }
+      @include breakpoint(desktop) {
+        grid-column: 4;
+      }
+    }
     padding: 3rem;
     row-gap: 3rem;
     &__column {
@@ -22,6 +47,10 @@
       }
       &.logo-column {
         grid-column: 1/3;
+
+        @include breakpoint(tablet) {
+          grid-column: 1/1;
+        }
       }
 
       &__list {
@@ -76,10 +105,21 @@
     align-items: center;
     position: relative;
     margin: 2rem 0 7rem 0;
+
+    @include breakpoint(desktop) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
     & > * {
       margin-bottom: 2rem;
-
+      @include breakpoint(desktop) {
+        margin-bottom: 0;
+        margin-top: 2rem;
+      }
       &:last-child {
+        @include breakpoint(desktop) {
+          margin-top: 2rem;
+        }
         margin-top: 3rem;
       }
     }
@@ -93,9 +133,17 @@
       top: 45%;
       width: 86%;
       margin: 0 auto;
+
+      @include breakpoint(desktop) {
+        top: 0;
+        width: 95%;
+      }
     }
 
     &__payments {
+      @include breakpoint(desktop) {
+        display: flex;
+      }
       & > * {
         &:not(:last-child) {
           margin-right: 0.5rem;

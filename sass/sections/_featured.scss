@@ -21,6 +21,11 @@
       justify-items: center;
       row-gap: 8rem;
       column-gap: 3rem;
+
+      @include breakpoint('desktop') {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 0;
+      }
     }
   }
 }
