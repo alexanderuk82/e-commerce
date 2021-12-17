@@ -11,9 +11,9 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  @include breakpoint('desktop') {
-    font-size: 66.5%;
-  }
+//   @include breakpoint('desktop') {
+//     font-size: 66.5%;
+//   }
 }
 
 body {
