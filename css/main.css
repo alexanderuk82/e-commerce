@@ -13,6 +13,7 @@
   --box-information: hsl(0, 0%, 96%);
   --light-gray: hsl(0, 0%, 90%);
   --menu-bottom: hsla(0, 0%, 55%, 0.8);
+  --menu-mobile-overlay: hsla(16, 25%, 38%, 0.575);
 }
 
 * {
@@ -885,6 +886,93 @@ figure figcaption .offerPrice {
 }
 .countdown > .time > h5:nth-child(1)::before {
   content: "";
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: var(--menu-mobile-overlay);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  --webkit-backdrop-filter: blur(6px);
+  height: 100vh;
+  width: 100%;
+  transition: all 0.4s linear;
+}
+.menu__container {
+  display: grid;
+  height: 100%;
+  background: linear-gradient(to bottom, #ffffffeb, #ffffffe0), url(../images/image-menu.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 70%;
+  position: absolute;
+  right: 0;
+  padding: 4rem 2rem;
+  grid-template-rows: -webkit-min-content 0.5fr 1fr -webkit-min-content;
+  grid-template-rows: min-content 0.5fr 1fr min-content;
+  row-gap: 4rem;
+}
+.menu__list {
+  list-style: none;
+}
+.menu__item:not(:last-child) {
+  border-bottom: 0.8px dashed;
+}
+.menu__link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 2rem 0.5rem;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.menu__link.active {
+  color: var(--main-color-dark);
+  font-weight: 600;
+}
+.menu__link.active::before {
+  content: "";
+  width: 19%;
+  height: 2px;
+  background-color: var(--main-color-dark);
+  position: absolute;
+  top: 3.3rem;
+  left: 0;
+}
+.menu__icons > * {
+  margin-right: 1.4rem;
+  cursor: pointer;
+}
+.menu__copy {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.menu__copy a:link,
+.menu__copy a:visited {
+  color: var(--main-color-dark);
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu__close {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../images/close-menu.svg);
+  background-color: transparent;
+  border: 0;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
+  top: 6rem;
+  left: 5rem;
+}
+.menu.hidden {
+  transform: translateX(100rem);
 }
 
 .btn-shop-now {

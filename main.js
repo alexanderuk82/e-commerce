@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 // ==============================//
 //  ***  slider Swiper  ***
@@ -302,12 +302,12 @@ function showProductOnSale(item) {
       i++;
 
       containOnSale.innerHTML = `
-        <a class="main__container__item--link" href="${url}">
-        <img
-        src="https://source.unsplash.com/random/900x400"
-        alt="Top rated"
-        />
-        </a>
+      <a class="main__container__item--link" href="${url}">
+      <img
+      src="https://source.unsplash.com/random/900x400"
+      alt="Top rated"
+      />
+      </a>
         <figcaption
         class="main__container__item main__container__item__details"
         >
@@ -329,7 +329,7 @@ function showProductOnSale(item) {
         
         `;
     } else {
-      containBest.style.display = 'none';
+      containOnSale.style.display = 'none';
       return;
     }
     onSales.appendChild(containOnSale);
@@ -337,3 +337,20 @@ function showProductOnSale(item) {
 }
 
 onSale();
+
+// ===========================================//
+//  *** MENU MOBILE ***
+// ========================================= //
+
+const close = document.querySelector('.menu__close');
+const open = document.querySelector('.header__topBar__container--menuIcon');
+
+const menu = document.querySelector('.menu');
+
+open.addEventListener('click', () => {
+  menu.classList.remove('hidden');
+});
+
+close.addEventListener('click', () => {
+  menu.classList.add('hidden');
+});

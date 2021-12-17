@@ -1,0 +1,100 @@
+@use '../abstracts/variable' as *;
+@use '../abstracts/mixing' as *;
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: var(--menu-mobile-overlay);
+  backdrop-filter: blur(6px);
+  --webkit-backdrop-filter: blur(6px);
+  height: 100vh;
+  width: 100%;
+  transition: all 0.4s linear;
+  &__container {
+    display: grid;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffffeb, #ffffffe0),
+      url(../images/image-menu.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    padding: 4rem 2rem;
+    grid-template-rows: min-content 0.5fr 1fr min-content;
+    row-gap: 4rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 0.8px dashed;
+    }
+  }
+
+  &__link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    padding: 2rem 0.5rem;
+    display: flex;
+    @include fontStyle(price, regular);
+
+    &.active {
+      color: var(--main-color-dark);
+      font-weight: map-get($fontWeight, semibold);
+
+      &::before {
+        content: '';
+        width: 19%;
+        height: 2px;
+        background-color: var(--main-color-dark);
+        position: absolute;
+        top: 3.3rem;
+        left: 0;
+      }
+    }
+  }
+
+  &__icons {
+    & > * {
+      margin-right: 1.4rem;
+      cursor: pointer;
+    }
+  }
+
+  &__copy {
+    @include fontStyle(small, regular);
+
+    a:link,
+    a:visited {
+      color: var(--main-color-dark);
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &__close {
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../images/close-menu.svg);
+    background-color: transparent;
+    border: 0;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: 6rem;
+    left: 5rem;
+  }
+
+  &.hidden {
+    transform: translateX(100rem);
+  }
+}
