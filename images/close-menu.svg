@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30.264" height="29.28" viewBox="0 0 30.264 29.28">
-  <g id="close-menu" transform="translate(-1154.706 -278.716) rotate(8)">
-    <path id="Path_57" data-name="Path 57" d="M4575.136,181.806l7.636-11.3,8.655-12.809" transform="translate(-3384 -42.06)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
-    <path id="Path_58" data-name="Path 58" d="M4575.136,181.806l7.636-11.3,8.655-12.809" transform="matrix(0.07, -0.998, 0.998, 0.07, 710.23, 4687.966)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="close-menu" transform="translate(-1.5 -1.5)">
+    <path id="Path_115" data-name="Path 115" d="M24.51,13.983a1.5,1.5,0,1,0-2.046-2.195L18.075,15.88l-4.092-4.39a1.5,1.5,0,0,0-2.193,2.046l4.092,4.389-4.391,4.092a1.5,1.5,0,1,0,2.046,2.193l4.389-4.09,4.092,4.389a1.5,1.5,0,1,0,2.193-2.045l-4.09-4.389,4.389-4.092Z" fill="#fff"/>
+    <path id="Path_116" data-name="Path 116" d="M1.5,18A16.5,16.5,0,1,1,18,34.5,16.5,16.5,0,0,1,1.5,18ZM18,31.5A13.5,13.5,0,1,1,31.5,18,13.5,13.5,0,0,1,18,31.5Z" fill="#fff" fill-rule="evenodd"/>
   </g>
 </svg>

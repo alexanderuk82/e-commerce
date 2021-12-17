@@ -38,6 +38,14 @@ body {
   font-weight: 400;
 }
 
+.header__topBar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  background-color: #fff;
+}
 @media (min-width: 62.5em) {
   .header__topBar {
     position: fixed;

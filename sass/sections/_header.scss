@@ -3,6 +3,12 @@
 .header {
   //Topbar section style
   &__topBar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    background-color: #fff;
     @include breakpoint('desktop') {
       position: fixed;
       width: 100%;
