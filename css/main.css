@@ -26,11 +26,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-/* @media (min-width: 62.5em) {
-  html {
-    font-size: 66.5%;
-  }
-} */
 
 body {
   font-family: var(--str-main);
@@ -908,6 +903,11 @@ figure figcaption .offerPrice {
   height: 100vh;
   width: 100%;
   transition: all 0.4s linear;
+}
+@media (min-width: 62.5em) {
+  .menu {
+    display: none;
+  }
 }
 .menu__container {
   display: grid;
